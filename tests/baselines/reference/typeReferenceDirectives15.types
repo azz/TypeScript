@@ -1,0 +1,16 @@
+=== /app.ts ===
+/// <reference types="lib" />
+interface J extends NS.I {}
+>J : J
+>NS.I : any
+>NS : any
+>I : NS.I
+
+=== /types/lib/index.d.ts ===
+declare namespace NS {
+>NS : any
+
+    export interface I {}
+>I : I
+}
+

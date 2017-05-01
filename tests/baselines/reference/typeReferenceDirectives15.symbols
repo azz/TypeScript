@@ -1,0 +1,16 @@
+=== /app.ts ===
+/// <reference types="lib" />
+interface J extends NS.I {}
+>J : Symbol(J, Decl(app.ts, 0, 0))
+>NS.I : Symbol(NS.I, Decl(index.d.ts, 0, 22))
+>NS : Symbol(NS, Decl(index.d.ts, 0, 0))
+>I : Symbol(NS.I, Decl(index.d.ts, 0, 22))
+
+=== /types/lib/index.d.ts ===
+declare namespace NS {
+>NS : Symbol(NS, Decl(index.d.ts, 0, 0))
+
+    export interface I {}
+>I : Symbol(I, Decl(index.d.ts, 0, 22))
+}
+
