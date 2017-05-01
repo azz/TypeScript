@@ -1,0 +1,14 @@
+=== /app.ts ===
+/// <reference types="lib" />
+interface J extends I {}
+>J : J
+>I : I
+
+=== /types/lib/indirect.d.ts ===
+declare interface I {}
+>I : I
+
+=== /types/lib/index.d.ts ===
+/// <reference path="indirect.d.ts" />
+No type information for this code.
+No type information for this code.
